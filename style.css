@@ -28,6 +28,11 @@ ul li {
     font-weight: bolder;
     color: white;
     list-style-type: none;
+    transition: all 0.25s ease-in-out;
+}
+
+ul #headeritem:hover {
+    box-shadow: 0px 8px white;
 }
 
 ul li a {
