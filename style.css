@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(54, 81, 92);
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    background: rgb(38, 55, 61);
+    align-items: center;
+    justify-content: left;
+}
+
+#logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+ul li {
+    margin: 0 15px 0 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+    list-style-type: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25vh;
+}
+
+#ninja-text {
+    width: 500px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+#ninja {
+    width: 300px;
+    height: 300px;
+    border: 5px rgb(255, 255, 255) dashed;
+    box-shadow: 0px 0px 50px rgb(255, 255, 255);
+}
