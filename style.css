@@ -57,3 +57,13 @@ section {
     border: 5px rgb(255, 255, 255) dashed;
     box-shadow: 0px 0px 50px rgb(255, 255, 255);
 }
+
+#ninjacircle {
+    position: absolute;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    background: transparent;
+    border: 10px red solid;
+    left: 1208px;
+}
