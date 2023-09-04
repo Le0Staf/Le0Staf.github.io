@@ -47,6 +47,18 @@ section {
     margin-top: 25vh;
 }
 
+#ninja-title {
+    position: absolute;
+    width: 500px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 300px;
+    margin-right: 670px;
+}
+
 #ninja-text {
     width: 500px;
     color: white;
