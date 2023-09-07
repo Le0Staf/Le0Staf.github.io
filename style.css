@@ -4,7 +4,7 @@
 }
 
 body {
-    background: rgb(54, 81, 92);
+    background: rgb(217, 244, 255);
 }
 
 ul {
@@ -49,7 +49,7 @@ ul li a {
 
 #ninja-title {
     width: 500px;
-    color: white;
+    color: rgb(38, 55, 61);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     text-transform: uppercase;
@@ -64,7 +64,7 @@ ul li a {
 
 #ninja-text {
     width: 500px;
-    color: white;
+    color: rgb(38, 55, 61);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-transform: uppercase;
