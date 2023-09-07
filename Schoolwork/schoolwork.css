@@ -40,53 +40,36 @@ ul li a {
     text-decoration: none;
 }
 
-#section1 {
+#works {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+#works div {
+    height: 50vh;
+    width: 70%;
+    background: rgb(38, 55, 61);
     display: flex;
     justify-content: space-evenly;
+}
+
+#button {
+    background: rgb(129, 164, 177);
+    padding: 4vh 6vw;
+    height: 0;
+    border-radius: 20px;
+    display: flex; 
     align-items: center;
-    margin-top: 25vh;
-}
-
-#ninja-title {
-    width: 500px;
+    margin-top: 2vh;
     color: white;
+    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    text-transform: uppercase;
     font-weight: bolder;
-    margin-right: 36vw;
-}
-
-#ninja-box {
-    width: 500px;
-    height: 100%;
-}
-
-#ninja-text {
-    width: 500px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bolder;
 }
 
-#ninja {
-    width: 300px;
-    height: 300px;
-    border: 5px rgb(255, 255, 255) dashed;
-    box-shadow: 0px 0px 50px rgb(255, 255, 255);
-}
-
-#ninjacircle {
-    position: absolute;
-    border-radius: 100%;
-    width: 300px;
-    height: 300px;
-    background: transparent;
-    border: 5px red solid;
-}
-
-#homeninja {
-    display: flex;
+#button:hover {
+    border: 2px white solid;
 }
