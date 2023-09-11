@@ -18,8 +18,13 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 50px;
     border: 2px black solid;
+}
+
+img {
+    width: 300px;
+    margin: 0px 45%;
 }
 
 button {
