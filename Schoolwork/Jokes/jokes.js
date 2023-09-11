@@ -1,13 +1,13 @@
-console.log(Object.values(JokeAPI));
-
 function getjoke() {
     JokeAPI.getJokes({
         jokeType: "single"
       })
-        .then((r) => r.json())
-        .then((data) => {
+      
+      .then((r) => r.json())
+      
+      .then((data) => {
           updateUI(data);
-        });
+      });
 }
 
 
