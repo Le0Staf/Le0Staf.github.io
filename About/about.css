@@ -54,6 +54,7 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    display: none;
 }
 
 #menu-open div {
@@ -102,6 +103,16 @@ header {
 
 #menu #menu-item:hover {
     box-shadow: 0px 8px white;
+}
+
+@media screen and (max-width: 800px) {
+    #menu-open {
+        display: flex;
+    }
+
+    #headeritem {
+        display: none;
+    }
 }
 
 section {
