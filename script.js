@@ -4,7 +4,7 @@ function repeatNinjaImage() {
         setTimeout(function () {
             document.getElementById("ninja").src = "ninja.jpg";
             repeatNinjaImage(); // Repeat the function
-        }, 100);
+        }, 200);
     }, 10000);
 }
 
