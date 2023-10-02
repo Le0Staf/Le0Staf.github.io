@@ -10,3 +10,7 @@ function repeatNinjaImage() {
 
 // Call the function to start the infinite repetition
 repeatNinjaImage();
+
+function menuOpen() {
+    document.getElementById("menu").classList.toggle("visible");
+} 

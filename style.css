@@ -67,6 +67,28 @@ header {
     cursor: pointer;
 }
 
+#menu-open {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+#menu-open div {
+    background-color: white;
+    width: 40px;
+    height: 6px;
+}
+
+#menu-open:hover {
+    cursor: pointer;
+}
+
 #menu {
     background-color: rgb(26, 38, 43);
     width: 300px;
@@ -76,6 +98,7 @@ header {
     list-style: none;
     padding-left: 20px;
     transition: all 0.25s ease-in-out;
+    z-index: 100;
 }
 
 #menu.hidden {

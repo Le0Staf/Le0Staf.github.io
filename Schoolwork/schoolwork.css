@@ -5,15 +5,137 @@
 
 body {
     background: rgb(217, 244, 255);
+    overflow-x: hidden;
 }
 
-ul {
+#navbar {
     display: flex;
     width: 100%;
     height: 75px;
     background: rgb(38, 55, 61);
     align-items: center;
     justify-content: left;
+}
+
+#logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+#navbar li {
+    margin: 0 15px 0 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+    list-style-type: none;
+    transition: all 0.25s ease-in-out;
+}
+
+#navbar #headeritem:hover {
+    box-shadow: 0px 8px white;
+}
+
+#navbar li a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    transition: all 0.25s ease-in-out;
+}
+
+#menu-open {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+#menu-open div {
+    background-color: white;
+    width: 40px;
+    height: 6px;
+}
+
+#menu-open:hover {
+    cursor: pointer;
+}
+
+#menu-open {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+#menu-open div {
+    background-color: white;
+    width: 40px;
+    height: 6px;
+}
+
+#menu-open:hover {
+    cursor: pointer;
+}
+
+#menu {
+    background-color: rgb(26, 38, 43);
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    right: 0; 
+    list-style: none;
+    padding-left: 20px;
+    transition: all 0.25s ease-in-out;
+    z-index: 100;
+}
+
+#menu.hidden {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu.visible {
+    transform: translateX(0);
+}
+
+#menu-item {
+    margin: 30px 0px;
+    transition: all 0.25s ease-in-out;
+    width: fit-content;
+}
+
+#menu-item a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#menu #menu-item:hover {
+    box-shadow: 0px 8px white;
+}
+
+@media screen and (max-width: 800px) {
+    #menu-open {
+        display: flex;
+    }
+
+    #headeritem {
+        display: none;
+    }
 }
 
 #logo-img {
