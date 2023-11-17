@@ -4,15 +4,40 @@
 }
 
 body {
-    background: rgb(217, 244, 255);
+    background: rgb(0, 0, 0);
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+#navbar-shadow {
+    position: fixed;
+    box-shadow: 0px 0px 30px 25px black;
+    width: 150%;
+}
+
 #navbar {
+    position: fixed;
     display: flex;
     width: 100%;
     height: 75px;
-    background: rgb(38, 55, 61);
     align-items: center;
     justify-content: left;
 }
@@ -20,6 +45,7 @@ body {
 #logo-img {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
 }
 
 #navbar li {
@@ -67,15 +93,28 @@ header {
     cursor: pointer;
 }
 
+#menu-open div {
+    background-color: white;
+    width: 40px;
+    height: 6px;
+}
+
+#menu-open:hover {
+    cursor: pointer;
+}
+
 #menu {
-    background-color: rgb(26, 38, 43);
+    background-color: rgb(0, 0, 0, 80%);
     width: 300px;
     height: 500px;
-    position: absolute;
+    position: fixed;
     right: 0; 
     list-style: none;
     padding-left: 20px;
     transition: all 0.25s ease-in-out;
+    z-index: 100;
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 75px;
 }
 
 #menu.hidden {
@@ -103,6 +142,17 @@ header {
 
 #menu #menu-item:hover {
     box-shadow: 0px 8px white;
+}
+
+@media screen and (min-width: 1000px) {
+    #menu.visible {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #menu.hidden {
+        transform: translateX(100%);
+    }
 }
 
 @media screen and (max-width: 800px) {
