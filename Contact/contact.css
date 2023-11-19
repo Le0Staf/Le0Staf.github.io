@@ -163,6 +163,38 @@ header {
     box-shadow: 0px 8px white;
 }
 
+.amongus {
+    width: 50px;
+    position: absolute;
+}
+
+#amongus1 {
+    left: 0;
+    rotate: 90deg;
+    top: 70%;
+}
+
+#amongus2 {
+    left: 80%;
+    bottom: 0;
+}
+
+#amongus3 {
+    left: 80%;
+    top: 0;
+    rotate: 180deg;
+}
+
+#amongus4 {
+    right: 0;
+    top: 30%;
+    rotate: -90deg;
+}
+
+.amongus:hover {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1000px) {
     #menu.visible {
         transform: translateX(100%);

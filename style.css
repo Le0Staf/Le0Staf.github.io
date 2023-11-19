@@ -6,6 +6,7 @@
 body {
     background: rgb(0, 0, 0);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -214,6 +215,37 @@ section {
 
 #homeninja {
     display: flex;
+}
+
+.amongus {
+    width: 50px;
+    position: absolute;
+}
+
+#amongus1 {
+    left: 0;
+    rotate: 90deg;
+    top: 50%;
+}
+
+#amongus2 {
+    left: 55%;
+    bottom: -5px;
+}
+
+#amongus3 {
+    left: 70%;
+    top: -5px;
+    rotate: 180deg;
+}
+
+#amongus4 {
+    right: 0;
+    rotate: -90deg;
+}
+
+.amongus:hover {
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1000px) {

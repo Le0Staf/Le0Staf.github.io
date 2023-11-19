@@ -221,6 +221,38 @@ header {
     border: 2px white solid;
 }
 
+.amongus {
+    width: 50px;
+    position: absolute;
+}
+
+#amongus1 {
+    left: 0;
+    rotate: 90deg;
+    top: 90%;
+}
+
+#amongus2 {
+    left: 20%;
+    bottom: 0;
+}
+
+#amongus3 {
+    left: 80%;
+    top: 0;
+    rotate: 180deg;
+}
+
+#amongus4 {
+    right: 0;
+    top: 80%;
+    rotate: -90deg;
+}
+
+.amongus:hover {
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1000px) {
     #menu.visible {
         transform: translateX(100%);
