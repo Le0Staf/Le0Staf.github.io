@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    cursor: none;
 }
 
 body {
@@ -108,18 +109,10 @@ header {
     height: 6px;
 }
 
-#menu-open:hover {
-    cursor: pointer;
-}
-
 #menu-open div {
     background-color: white;
     width: 40px;
     height: 6px;
-}
-
-#menu-open:hover {
-    cursor: pointer;
 }
 
 #menu {
@@ -235,8 +228,14 @@ section {
     rotate: -90deg;
 }
 
-.amongus:hover {
-    cursor: pointer;
+#cursor {
+    width: 30px;
+    position: absolute;
+    pointer-events: none;
+}
+
+iframe:hover {
+    cursor: none;
 }
 
 @media screen and (min-width: 1000px) {

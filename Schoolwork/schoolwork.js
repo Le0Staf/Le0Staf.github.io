@@ -13,6 +13,7 @@ function Death(number) {
         if (amongus1 == true) {
             var killsound = new Audio();
             killsound.src = "/kill.mp3";
+            killsound.volume = 0.2;
             killsound.play();
             new Audio().src = "/kill.mp3";
             document.getElementById('amongus1').src='/dead_body_standing_up.png';
@@ -23,6 +24,7 @@ function Death(number) {
         if (amongus2 == true) {
             var killsound = new Audio();
             killsound.src = "/kill.mp3";
+            killsound.volume = 0.2;
             killsound.play();
             new Audio().src = "/kill.mp3";
             document.getElementById('amongus2').src='/dead_body_standing_up.png';
@@ -33,6 +35,7 @@ function Death(number) {
         if (amongus3 == true) {
             var killsound = new Audio();
             killsound.src = "/kill.mp3";
+            killsound.volume = 0.2;
             killsound.play();
             new Audio().src = "/kill.mp3";
             document.getElementById('amongus3').src='/dead_body_standing_up.png';
@@ -43,6 +46,7 @@ function Death(number) {
         if (amongus4 == true) {
             var killsound = new Audio();
             killsound.src = "/kill.mp3";
+            killsound.volume = 0.2;
             killsound.play();
             new Audio().src = "/kill.mp3";
             document.getElementById('amongus4').src='/dead_body_standing_up.png';
@@ -50,3 +54,11 @@ function Death(number) {
         }
     }
 }
+
+window.addEventListener("mousemove", (e) => {
+    let xPos = e.clientX;
+    let yPos = e.clientY;
+    console.log(xPos, yPos);
+    document.getElementById("cursor").style.left = (xPos - 12) + "px";
+    document.getElementById("cursor").style.top = (yPos ) + "px";
+});

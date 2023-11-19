@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    cursor: none;
 }
 
 body {
@@ -110,18 +111,10 @@ header {
     height: 6px;
 }
 
-#menu-open:hover {
-    cursor: pointer;
-}
-
 #menu-open div {
     background-color: white;
     width: 40px;
     height: 6px;
-}
-
-#menu-open:hover {
-    cursor: pointer;
 }
 
 #menu {
@@ -211,6 +204,12 @@ section {
     height: 20vw;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 10px rgb(255, 255, 255);
+    transition: all ease-in-out 100s;
+}
+
+#ninja:hover {
+    rotate: 720000deg;
+    transform:scale(10);
 }
 
 #homeninja {
@@ -220,6 +219,7 @@ section {
 .amongus {
     width: 50px;
     position: absolute;
+    transition: all ease-in-out 0.1s;
 }
 
 #amongus1 {
@@ -245,7 +245,13 @@ section {
 }
 
 .amongus:hover {
-    cursor: pointer;
+    width: 55px;
+}
+
+#cursor {
+    width: 30px;
+    position: absolute;
+    pointer-events: none;
 }
 
 @media screen and (min-width: 1000px) {
