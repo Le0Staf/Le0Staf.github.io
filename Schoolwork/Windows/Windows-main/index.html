@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js" async></script>
+    <script src="fileexplorer.js" async></script>
+    <script src="calculator.js" async></script>
+</head>
+<body>
+    <div id="body2">
+    <!-----------------------------------------------Task Bar----------------------------------------------->
+
+    <nav>
+        <ul id="left-taskbar">  
+
+            <!--Start Button-->
+
+            <li id="start" onclick="OpenStartMenu()" class="inactive"><img id="start-img" src="windowslogo.png"></li>
+
+            <!--Start Menu-->
+
+            <ul id="start-menu" class="hidden">
+                <div id="start-menu-menu">
+                    <img src="burger.png" width="15px" height="15px">
+                    <img id="quit" src="quit.png" width="15px" height="15px">
+                </div>
+
+                <div id="apps">
+                    <p>Most used</p>
+                    <p>A</p>
+                    <p>B</p>
+                    <p>C</p>
+                    <div onclick="OpenCalculator(); CloseStartMenu()"><img src="calculator.png">Calculator</div>
+                    <p>D</p>
+                    <p>E</p>
+                    <p>F</p>
+                    <div onclick="OpenFileExplorer(); CloseStartMenu()"><img src="explorer.png">File Explorer</div>
+                    <p>G</p>
+                    <p>H</p>
+                    <p>I</p>
+                    <p>J</p>
+                    <p>K</p>
+                    <p>L</p>
+                    <p>M</p>
+                    <p>N</p>
+                    <p>O</p>
+                    <p>P</p>
+                    <p>Q</p>
+                    <p>R</p>
+                    <p>S</p>
+                    <p>T</p>
+                    <p>U</p>
+                    <p>V</p>
+                    <p>W</p>
+                    <p>X</p>
+                    <p>Y</p>
+                    <p>Z</p>
+                </div>
+
+                <div id="big-start-buttons">
+                    <p>Apps</p>
+                    <div onclick="OpenFileExplorer(), CloseStartMenu()"><img src="explorer.png"><p>File Explorer</p></div>
+                    <div><img></div>
+                    <div><img></div>
+                    <div><img></div>
+                    <div><img></div>
+                    <div><img></div>
+                </div>
+
+            </ul>
+
+            <div id="start-hover">Start</div>
+
+            <!--Search Bar-->
+
+            <li id="search"><input type="text" name="ntext" placeholder="Type here to search"></li>
+
+            <!--File Explorer Button-->
+
+            <li id="file-explorer" onclick="OpenFileExplorer()"><img id="file-explorer-img" src="explorer.png"></li>
+        </ul>
+
+        <!--Right Taskbar-->
+
+        <ul id="right-taskbar">
+            <li id="open-desktop"></li>
+        </ul>
+    </nav>
+
+
+    <!-----------------------------------------------File Explorer----------------------------------------------->
+
+    <div id="file-explorer-menu" class="hidden">
+        <header id="file-explorer-menu-header">
+            <div id="left-file-explorer-nav">
+                <img id="file-explorer-menu-header-image" src="explorer.png">
+                <p>File Explorer</p>
+            </div>
+            <div id="right-file-explorer-nav">
+                <div id="file-explorer-menu-minimize" onclick="CloseFileExplorer()"><img src="minimizeblack.png"></div>
+                <div id="file-explorer-menu-fullscreen" onclick="MaximizeFileExplorer()"><img src="fullscreenblack.png"></div>
+                <div id="file-explorer-menu-close" onclick="CloseFileExplorer()"><img src="closeblack.png"></div>
+            </div>
+        </header>
+    </div>
+
+    <!-----------------------------------------------Calculator----------------------------------------------->
+
+    <div id="calculator" class="hidden">
+        <header id="calculator-header">
+            <div id="left-calculator-nav">
+                <p>Calculator</p>
+            </div>
+            <div id="right-calculator-nav">
+                <div id="calculator-minimize" onclick="CloseCalculator()"><img id="calculator-minimize-img" src="minimizeblack.png"></div>
+                <div id="calculator-fullscreen" onclick="MaximizeCalculator()"><img id="calculator-fullscreen-img" src="fullscreenblack.png"></div>
+                <div id="calculator-close" onclick="CloseCalculator()"><img id="calculator-close-img" src="closeblack.png"></div>
+            </div>
+        </header>
+        <div id="calculator-header2">
+            <img id="calculator-burger" src="burgerblack.png">
+            <p>Standard</p>
+        </div>
+        <h1 id="calculator-output">0</h1>
+        <div id="calculator-header3">
+            <p id="gray">MC</p>
+            <p id="gray">MR</p>
+            <p id="black">M+</p>
+            <p id="black">M-</p>
+            <p id="black">MS</p>
+            <p id="gray">M▼</p>
+        </div>
+        <div id="calculate">
+            <div><p>%</p></div>
+            <div><p>✔</p></div>
+            <div><p>x²</p></div>
+            <div><p>¹/x</p></div>
+            
+            <div onclick="CalculatorReset()"><p>CE</p></div>
+            <div onclick="CalculatorReset()"><p>C</p></div>
+            <div onclick="CalculatorBackspace()"><img id="calculator-backspace" src="backspace.png"></div>
+            <div onclick="CalculatorDivision()"><img id="calculator-divide" src="divide.png"></div>
+
+            <div onclick="CalculatorNumber(7)"><p>7</p></div>
+            <div onclick="CalculatorNumber(8)"><p>8</p></div>
+            <div onclick="CalculatorNumber(9)"><p>9</p></div>
+            <div onclick="CalculatorMultiplication()"><p>x</p></div>
+
+            <div onclick="CalculatorNumber(4)"><p>4</p></div>
+            <div onclick="CalculatorNumber(5)"><p>5</p></div>
+            <div onclick="CalculatorNumber(6)"><p>6</p></div>
+            <div onclick="CalculatorSubtraction()"><p>-</p></div>
+
+            <div onclick="CalculatorNumber(1)"><p>1</p></div>
+            <div onclick="CalculatorNumber(2)"><p>2</p></div>
+            <div onclick="CalculatorNumber(3)"><p>3</p></div>
+            <div onclick="CalculatorAddition()"><p>+</p></div>
+
+            <div><p>±</p></div>
+            <div onclick="CalculatorNumber(0)"><p>0</p></div>
+            <div onclick="CalculatorChangeToDecimal()"><p>.</p></div>
+            <div onclick="CalculatorEquals()"><p>=</p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
