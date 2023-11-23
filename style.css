@@ -5,9 +5,13 @@
 }
 
 body {
+    position: absolute;
     background: rgb(0, 0, 0);
     overflow-x: hidden;
     overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0 0 200px 100px #000000;
 }
 
 ::-webkit-scrollbar {
@@ -204,7 +208,7 @@ section {
     height: 20vw;
     border-radius: 50%;
     box-shadow: 0px 0px 20px 10px rgb(255, 255, 255);
-    transition: all ease-in-out 100s;
+    transition: all ease-in-out 1s;
 }
 
 #ninja:hover {
@@ -252,6 +256,7 @@ section {
     width: 30px;
     position: absolute;
     pointer-events: none;
+    z-index: 100;
 }
 
 @media screen and (min-width: 1000px) {
@@ -285,6 +290,6 @@ section {
     #ninja {
         width: 60vw;
         height: 60vw;
-        margin-top: 75px;
+        margin-top: 20px;
     }
 }

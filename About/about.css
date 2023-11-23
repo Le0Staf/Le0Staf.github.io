@@ -7,6 +7,9 @@
 body {
     background: rgb(0, 0, 0);
     overflow-x: hidden;
+    width: 100%;
+    height: fit-content;
+    box-shadow: inset 0 0 200px 100px #000000;
 }
 
 ::-webkit-scrollbar {
@@ -203,6 +206,7 @@ section {
 .amongus {
     width: 50px;
     position: absolute;
+    transition: all ease-in-out 0.1s;
 }
 
 #amongus1 {
@@ -211,14 +215,9 @@ section {
     top: 30%;
 }
 
-#amongus2 {
-    left: 55%;
-    bottom: -82%;
-}
-
 #amongus3 {
     left: 60%;
-    top: -5px;
+    top: 0;
     rotate: 180deg;
 }
 
@@ -228,10 +227,15 @@ section {
     rotate: -90deg;
 }
 
+.amongus:hover {
+    width: 55px;
+}
+
 #cursor {
     width: 30px;
     position: absolute;
     pointer-events: none;
+    z-index: 100;
 }
 
 iframe:hover {
